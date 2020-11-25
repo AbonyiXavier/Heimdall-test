@@ -1,6 +1,6 @@
 import chai, { expect } from "chai";
 import chaiHttp from "chai-http";
-import app from "../../server";
+import app from "../../index";
 import { data2, data3 } from "./question-data";
 
 chai.should();
