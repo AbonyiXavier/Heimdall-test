@@ -11,8 +11,7 @@
     "build": "npm run clean && npm run build-babel",
     "start": "npm run build && node ./build/server.js",
     "test": " cross-env NODE_ENV=test nyc --reporter=text --reporter=html mocha --require @babel/register src/test/index.js --timeout 10000 --recursive --exit || true",
-    "coverage": "nyc npm run test && nyc report --reporter=text-lcov | coveralls",
-    "heroku-prebuild": "npm install"
+    "coverage": "nyc npm run test && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",

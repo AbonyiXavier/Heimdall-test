@@ -1,2 +1,3 @@
 node_modules
-.historys
+.history
+package-lock.json
