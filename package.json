@@ -11,7 +11,8 @@
     "build": "npm run clean && npm run build-babel",
     "start": "npm run build && node ./build/server.js",
     "test": " cross-env NODE_ENV=test nyc --reporter=text --reporter=html mocha --require @babel/register src/test/index.js --timeout 10000 --recursive --exit || true",
-    "coverage": "nyc npm run test && nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc npm run test && nyc report --reporter=text-lcov | coveralls",
+    "heroku-prebuild": "npm install"
   },
   "repository": {
     "type": "git",
@@ -55,5 +56,22 @@
   },
   "engines": {
     "node": "12.18.3"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  },
+  "nyc": {
+    "require": [
+      "@babel/register",
+      "@babel/polyfill"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "sourceMap": false,
+    "instrument": false
   }
 }
