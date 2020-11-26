@@ -13,12 +13,12 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
 - Open any restful client application initially installed
 - Select the appropriate http method. Either GET, POST, PATCH
 
-### Homepage Route
+### Homepage Endpoint
 
 - Use the GET method
 - Use this url https://heimdall-test-api.herokuapp.com/
 
-### All validation passes
+### All validation passes Endpoint
 
 - Use the POST method
 - Use this url https://heimdall-test-api.herokuapp.com/api/v1/input-validate
@@ -41,7 +41,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
   "message": "Valid"
   }
 
-### Missing input item
+### Missing input item Endpoint
 
 - Use the POST method
 - Use this url https://heimdall-test-api.herokuapp.com/api/v1/input-validate
@@ -65,7 +65,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
   ]
   }
 
-### Successfully remove item from object
+### Successfully remove item from object Endpoint
 
 - Use the PATCH method
 - Use this url https://heimdall-test-api.herokuapp.com/api/v1/remove-item
@@ -92,7 +92,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
   }
   }
 
-### Attribute not found
+### Attribute not found Endpoint
 
 - Use the PATCH method
 - Use this url https://heimdall-test-api.herokuapp.com/api/v1/remove-item
@@ -115,7 +115,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
   "message": "attribute not found"
   }
 
-### Valid lowest index
+### Valid lowest index Endpoint
 
 - Use the POST method
 - Use this url https://heimdall-test-api.herokuapp.com/api/v1/lowest-index
@@ -133,7 +133,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
   "message": 0
   }
 
-### Return -1 for no solution lowest index
+### Return -1 for no solution lowest index Endpoint
 
 - Use the POST method
 - Use this url https://heimdall-test-api.herokuapp.com/api/v1/lowest-index
