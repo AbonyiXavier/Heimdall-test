@@ -35,13 +35,13 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
   "rules": ["type", "crux", "color", "title"]
   }
 
-  - Output response
-    {
-    "status": 200,
-    "message": "Valid"
-    }
+- Output response
+  {
+  "status": 200,
+  "message": "Valid"
+  }
 
-    ### Missing input item
+### Missing input item
 
 - Use the POST method
 - Use this url https://heimdall-test-api.herokuapp.com/api/v1/input-validate
@@ -57,14 +57,15 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
   "rules": ["type", "crux", "color", "title"]
   }
 
-  - Output response
-    {
-    "status": 400,
-    "missingInputItems": [
-    "crux"
-    ]
-    }
-    ### Successfully remove item from object
+- Output response
+  {
+  "status": 400,
+  "missingInputItems": [
+  "crux"
+  ]
+  }
+
+### Successfully remove item from object
 
 - Use the PATCH method
 - Use this url https://heimdall-test-api.herokuapp.com/api/v1/remove-item
@@ -81,16 +82,17 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
   "item": "type"
   }
 
-  - Output response
-    {
-    "status": 200,
-    "output": {
-    "crux": "Indices",
-    "color": "green",
-    "title": "Indict the idiot"
-    }
-    }
-    ### Attribute not found
+- Output response
+  {
+  "status": 200,
+  "output": {
+  "crux": "Indices",
+  "color": "green",
+  "title": "Indict the idiot"
+  }
+  }
+
+### Attribute not found
 
 - Use the PATCH method
 - Use this url https://heimdall-test-api.herokuapp.com/api/v1/remove-item
@@ -107,12 +109,13 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
   "item": "noItemFromObject"
   }
 
-  - Output response
-    {
-    "status": 404,
-    "message": "attribute not found"
-    }
-    ### Valid lowest index
+- Output response
+  {
+  "status": 404,
+  "message": "attribute not found"
+  }
+
+### Valid lowest index
 
 - Use the POST method
 - Use this url https://heimdall-test-api.herokuapp.com/api/v1/lowest-index
@@ -124,12 +127,13 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
   "distance": [2, 3, 4, 2]
   }
 
-  - Output response
-    {
-    "status": 200,
-    "message": 0
-    }
-    ### Return -1 for no solution lowest index
+- Output response
+  {
+  "status": 200,
+  "message": 0
+  }
+
+### Return -1 for no solution lowest index
 
 - Use the POST method
 - Use this url https://heimdall-test-api.herokuapp.com/api/v1/lowest-index
@@ -141,11 +145,11 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
   "distance": [2, 3, 4, 2]
   }
 
-  - Output response
-    {
-    "status": 400,
-    "message": -1
-    }
+- Output response
+  {
+  "status": 400,
+  "message": -1
+  }
 
 # Technologies
 
