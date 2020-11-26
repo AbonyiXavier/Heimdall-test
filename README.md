@@ -25,6 +25,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
 
 - Test Data
 
+```Bash
   {
   "data": {
   "type": "durban",
@@ -40,6 +41,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
   "status": 200,
   "message": "Valid"
   }
+```
 
 ### Missing input item Endpoint
 
@@ -48,6 +50,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
 
 - Test Data
 
+```Bash
   {
   "data": {
   "type": "durban",
@@ -64,6 +67,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
   "crux"
   ]
   }
+```
 
 ### Successfully remove item from object Endpoint
 
@@ -72,6 +76,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
 
 - Test Data
 
+```Bash
   {
   "data": {
   "type": "durban",
@@ -91,6 +96,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
   "title": "Indict the idiot"
   }
   }
+```
 
 ### Attribute not found Endpoint
 
@@ -99,6 +105,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
 
 - Test Data
 
+```Bash
   {
   "data": {
   "type": "durban",
@@ -114,6 +121,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
   "status": 404,
   "message": "attribute not found"
   }
+```
 
 ### Valid lowest index Endpoint
 
@@ -122,6 +130,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
 
 - Test Data
 
+```Bash
   {
   "magic": [3, 2, 5, 4],
   "distance": [2, 3, 4, 2]
@@ -132,6 +141,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
   "status": 200,
   "message": 0
   }
+```
 
 ### Return -1 for no solution lowest index Endpoint
 
@@ -140,6 +150,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
 
 - Test Data
 
+```Bash
   {
   "magic": [3, 2, 5, 4],
   "distance": [2, 3, 4, 2]
@@ -150,6 +161,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
   "status": 400,
   "message": -1
   }
+```
 
 # Technologies
 
