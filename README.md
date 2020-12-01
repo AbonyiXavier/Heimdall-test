@@ -172,6 +172,7 @@ Heimdall Technologies Test APIs hosted on heroku [link](https://heimdall-test-ap
 - Travis CI && Coveralls
 - Babel
 - Heroku
+- Docker
 
 # Prerequisites
 
